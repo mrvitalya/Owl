@@ -16,7 +16,6 @@ public struct StagedChangeset<Collection: Swift.Collection> {
 	@usableFromInline
 	internal var changesets: ContiguousArray<Changeset<Collection>>
 	
-	@inlinable
 	public init<C: Swift.Collection>(_ changesets: C) where C.Element == Changeset<Collection> {
 		self.changesets = ContiguousArray(changesets)
 	}

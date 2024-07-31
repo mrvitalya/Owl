@@ -25,7 +25,6 @@ public struct Changeset<Collection: Swift.Collection> {
 	public var elementUpdated: [ElementPath]
 	public var elementMoved: [(source: ElementPath, target: ElementPath)]
 
-	@inlinable
 	public init(
 		data: Collection,
 		sectionDeleted: [Int] = [],
